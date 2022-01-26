@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>PizzaHyt | Contato</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/index.html"
+          ><img src="/images/Logo.svg" alt="PizzaHyt" class="logo"
+        /></a>
+
+        <ul class="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.html#about">Sobre nós</a></li>
+          <li><a href="/index.html#location">Localização</a></li>
+          <li><a href="/pages/cardapio/index.html">Cardápio</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+
+        <!-- menu-hamburguer pro mobile -->
+
+        <!-- menu-hamburguer -->
+        <span class="menu-hb"></span>
+
+        <!-- menu-mobile que aparece depois de apertamos o menu-mb -->
+        <ul class="menu-mb">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.html#about">Sobre nós</a></li>
+          <li><a href="/index.html#location">Localização</a></li>
+          <li><a href="/pages/cardapio/index.html">Cardápio</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="contato">
+        <h1>Contato</h1>
+        <p>
+          Entre em contato conosco preenchendo o formulário abaixo, tirando suas dúvidas ou dando sugestões que responderemos através de e-mail, o mais breve possível.
+        </p>
+        <form onsubmit="sendMsg(event)" class="contact-form">
+          <input type="text" name="name" id="name" placeholder="Nome">
+          <input type="email" name="email" id="email" placeholder="E-mail">
+          <input type="text" name="celular" id="celular" placeholder="Celular">
+          <input type="text" name="telefone" id="telefone" placeholder="Telefone">
+        
+          <label for="msg">
+            Deixa sua mensagem:
+          </label>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10">
+              
+          </textarea>
+          <button type="submit" class="send-msg">Enviar mensagem</button>
+        </form>
+      </section>
+    </main>
+     <!-- footer do site -->
+     <footer class="footer">
+      <!-- 3 divs pra separar os 3 elementos do footer, 
+          onde será possível adicionar um display 
+          flex, permitindo que os 3 elementos possam ficar 
+          um ao lado do outro -->
+      <div id="logo">
+          <img src="/images/logo-footer.svg" alt="PizzaHyt">
+      </div>
+      <div id="contact">
+          <strong>Contatos</strong>
+          <p>contato@pizzahyt.com</p>
+          <p>+55 11 9999-9999</p>         
+      </div>
+      <div id="social-media">
+          <strong>Redes Sociais</strong>
+          <div class="icons">
+              <img src="/images/instagram-logo.svg" alt="Instagram">
+              <img src="/images/facebook-logo.svg" alt="Facebook">
+          </div>
+          
+          
+      </div>
+  </footer>
+  <a href="/pages/cardapio/index.html" class="float-button-cardapio">
+    <img src="/images/float.png" alt="Cardápio">
+  </a>
+    <script src="/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>PizzaHyt</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/index.html"
+          ><img src="/images/Logo.svg" alt="PizzaHyt" class="logo"
+        /></a>
+
+        <ul class="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#about">Sobre nós</a></li>
+          <li><a href="#location">Localização</a></li>
+          <li><a href="/pages/cardapio/index.html">Cardápio</a></li>
+          <li><a href="/pages/contact/index.html">Contato</a></li>
+        </ul>
+
+        <!-- menu-hamburguer pro mobile -->
+
+        <!-- menu-hamburguer -->
+        <span class="menu-hb"></span>
+
+        <!-- menu-mobile que aparece depois de apertamos o menu-mb -->
+        <ul class="menu-mb">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#about">Sobre nós</a></li>
+          <li><a href="#location">Localização</a></li>
+          <li><a href="/pages/cardapio/index.html">Cardápio</a></li>
+          <li><a href="/pages/contact/index.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- pizza demonstrativa  -->
+      <div class="background-pizza"></div>
+
+      <!-- sobre nós -->
+
+      <section id="about">
+        <div class="pizza-sbn">
+          <img src="/images/pizza-sbn.svg" alt="Pizza sendo degustada" />
+        </div>
+        <!-- ----------------------------- -->
+
+        <!-- o traço que vai dividir a duas divs -->
+        <div class="division"></div>
+
+        <!-- -------------------------- -->
+        <div class="history">
+          <strong>seja bem vindo a</strong>
+          <span class="pizza-span">PizzaHyt</span>
+          <p class="history">
+            Nós somos a primeira pizzaria aberta no Brasil em 1910, com os
+            imigrantes italianos. O bairro para essa recepção foi o São Caetano
+            do Sul, na cidade de São Paulo. Contudo, no início, os brasileiros
+            não haviam aderido tão bem o novo alimento. Só a partir de 1950 que
+            o prato se tornou popular por todo o país.
+          </p>
+        </div>
+      </section>
+
+      <section id="location">
+        <h2>Localização</h2>
+
+        <div id="location-content">
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d116921.15386160077!2d-46.4489278!3d-23.6836077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1633120154337!5m2!1spt-BR!2sbr"
+              width="400"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+            <strong>SP - PizzaHyt</strong>
+            <p>Rua Bell Aliance, 143</p>
+            <p>Jardim Guapituba, Mauá - SP</p>
+            <p>09360-330</p>
+            <strong>Horário de Funcionamento</strong>
+            <p>Terça à Quinta - 19:00 às 23:00</p>
+            <p>Sexta à Domingo - 18:30 às 00:30</p>
+          </div>
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d116921.15386160077!2d-46.4489278!3d-23.6836077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1633120154337!5m2!1spt-BR!2sbr"
+              width="400"
+              height="350"
+              style="border: 0; "
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+            <strong>SP - PizzaHyt</strong>
+            <p>Rua Bell Aliance, 143</p>
+            <p>Jardim Guapituba, Mauá - SP</p>
+            <p>09360-330</p>
+            <strong>Horário de Funcionamento</strong>
+            <p>Terça à Quinta - 19:00 às 23:00</p>
+            <p>Sexta à Domingo - 18:30 às 00:30</p>
+          </div>
+        </div>
+      </section>
+    </main>
+     <!-- footer do site -->
+     <footer class="footer">
+      <!-- 3 divs pra separar os 3 elementos do footer, 
+          onde será possível adicionar um display 
+          flex, permitindo que os 3 elementos possam ficar 
+          um ao lado do outro -->
+      <div id="logo">
+          <img src="/images/logo-footer.svg" alt="PizzaHyt">
+      </div>
+      <div id="contact">
+          <strong>Contatos</strong>
+          <p>contato@pizzahyt.com</p>
+          <p>+55 11 9999-9999</p>         
+      </div>
+      <div id="social-media">
+          <strong>Redes Sociais</strong>
+          <div class="icons">
+              <img src="/images/instagram-logo.svg" alt="Instagram">
+              <img src="/images/facebook-logo.svg" alt="Facebook">
+          </div>
+          
+          
+      </div>
+  </footer>
+  <a href="/pages/cardapio/index.html" class="float-button-cardapio">
+    <img src="/images/float.png" alt="Cardápio">
+  </a>
+    <script src="/menu.js"></script>
+  </body>
+</html>

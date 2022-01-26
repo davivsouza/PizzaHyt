@@ -1,0 +1,61 @@
+#cardapio{
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+#cardapio h1{
+  font-family: Sen, sans-serif;
+  color: #B50505;
+  text-align: center;
+  font-size: clamp(30px, 8vw, 50px);
+  margin: 20px 0 ;
+}
+
+.cardapio-menu{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+}
+
+
+.pizza-cardapio,
+.drink-cardapio{
+  color: #5DB505;
+  font-family: Sen, sans-serif;
+  font-size: 25px;
+}
+
+.pizzas,
+.drinks{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pizza-name{
+  color: #B50505;
+  font-size: 18px;
+  font-family: Sen, sans-serif;
+  margin-top: 10px;
+}
+
+.temperos{
+  font-family: Sen, sans-serif;
+  font-size: 15px;
+}
+
+.division{
+  height: 100%;
+}
+
+@media screen and (max-width:700px) {
+  .cardapio-menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .drinks{
+    margin: 50px 0;
+  }
+}
