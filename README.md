@@ -1,2 +1,2 @@
 # PizzaHyt
-Projeto feito com meu amigo [Victor](https://github.com/victor-dev/)
+Projeto feito com meu amigo [Victor](https://github.com/VictorRocha-dev)
